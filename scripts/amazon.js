@@ -50,7 +50,15 @@ products.forEach( (product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">
+          <button class="add-to-cart-button button-primary js-add-to-cart-button">
+          <!-- 
+          ################ 
+          Make code interactive:
+          by using the DOM (docment object listener 
+          to add an event listener on this button "Add to Cart"
+          via class js-add-to-cart-button class on the button in the js script
+          ################
+          -->
             Add to Cart
           </button>
         </div>
