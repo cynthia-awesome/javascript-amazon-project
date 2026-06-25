@@ -1,7 +1,7 @@
 
-const renderHTML = ``;
+let renderHTML = ``;
 
-products.foreach( (product) => {
+products.forEach( (product) => {
 
     // Adds the string to the products HTML called renderHTML
     renderHTML += `
@@ -9,7 +9,7 @@ products.foreach( (product) => {
           
           <div class="product-image-container">
             <img class="product-image"
-              src="${products.image}">
+              src="${product.image}">
           </div>
 
           <div class="product-name limit-text-to-2-lines">
@@ -25,7 +25,7 @@ products.foreach( (product) => {
           </div>
 
           <div class="product-price">
-            $10.90
+            $${(product.priceCents / 100).toFixed(2)}
           </div>
 
           <div class="product-quantity-container">
