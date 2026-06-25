@@ -52,15 +52,21 @@
     </div>
     
     <div class="main">
-      <div class="products-grid">
+
+      <!-- ######## Add class js-product-grid that creates the products HTML using js ######## -->
+      <div class="products-grid js-products-grid">
+        <!--
         <div class="product-container">
+          
           <div class="product-image-container">
             <img class="product-image"
               src="images/products/athletic-cotton-socks-6-pairs.jpg">
+          
           </div>
 
           <div class="product-name limit-text-to-2-lines">
             Black and Gray Athletic Cotton Socks - 6 Pairs
+          
           </div>
 
           <div class="product-rating-container">
@@ -100,6 +106,10 @@
           <button class="add-to-cart-button button-primary">
             Add to Cart
           </button>
+        
+        
+        
+        
         </div>
 
         <div class="product-container">
@@ -199,7 +209,25 @@
             Add to Cart
           </button>
         </div>
+
+        ##########
+        Instead of writing HTML for every product listing, 
+        we will use javascript to generate the HTML for each product
+
+        How:
+        1) Save the data
+              Save the products as object elements in a data structure (collection)
+              called products in javascript
+        2) generate the HTML of each product by iterating through each 
+           product (object) in the products collection
+        ##########
+        -->
       </div>
     </div>
+
+    <!-- ######### Holds the product data structure in js ######### -->
+    <script src="data/products.js"></script> 
+    <!-- ######### Holds the for loop that generates the HTML using the product data stucture ("data") in js ########  -->
+    <script src="scripts/amazon.js"></script>
   </body>
 </html>
