@@ -167,6 +167,24 @@ document.querySelectorAll('.js-add-to-cart-button') // - loads all elements (the
       console.log(cartQuantity);
       document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 
+      // #####################################
+      //     Next: update quantity in cart
+      //           and display quantity
+      //           by the number we select
+      //     Example: add 8 to cart
+      //              expected result is 
+      //                  item quantity += 8
+      //              and cart quantity += 8
+      // #####################################
+      //     Plan:
+      //      1.
+      //      2. 
+      //      3. 
+      //      4. 
+      //      5. 
+      //      6. 
+
+
     }
     ); // event listener function ends here //
 
